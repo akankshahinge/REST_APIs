@@ -23,3 +23,5 @@ The waiter takes your order, delivers it to the kitchen, telling the kitchen wha
 4. DELETE: deletes existing information
 
 Difference between UPDATE and PUT is that, UPDATE will update existing resources and PUT will first check for resources and if there is no resource then it will create a resource and if there is a resource then it will update it.
+
+REST is stateless: That means one request cannot depend on other requests. The server depends only on current request and not on any other previous request.
