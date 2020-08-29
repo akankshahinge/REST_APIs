@@ -21,3 +21,5 @@ The waiter takes your order, delivers it to the kitchen, telling the kitchen wha
 2. POST: sends changes from the client to the server; think of this as adding information to the server, like making a new entry
 3. PUT: revises or adds to existing information
 4. DELETE: deletes existing information
+
+Difference between UPDATE and PUT is that, UPDATE will update existing resources and PUT will first check for resources and if there is no resource then it will create a resource and if there is a resource then it will update it.
