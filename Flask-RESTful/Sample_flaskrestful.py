@@ -13,9 +13,9 @@ items = []
 class Item(Resource):
   def get(self,name):
    for item in items:
-    if item['name']==name:       [We can use filter function to filter data ie. item=next(filter(lamda x:x['name']==name,items),None)]
+    if item['name']==name:       #[We can use filter function to filter data ie. item=next(filter(lamda x:x['name']==name,items),None)]
       return item
-    return {'item':None}, 404    [return {'item':item}, 200 if item else 404]
+    return {'item':None}, 404    #[return {'item':item}, 200 if item else 404]
 
   def post(self,name):
     data=request.get_json(silent=True)
